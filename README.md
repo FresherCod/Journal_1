@@ -93,7 +93,7 @@ python main.py
 Output
 Results will be organized under the results/ directory:
 
-```
+``` text
 results/
 ├── dataset_mvtec/
 │   ├── report_dataset_mvtec.xlsx  # Final performance summary (NG F1, OK F1, Time)
