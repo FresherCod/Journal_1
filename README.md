@@ -92,6 +92,7 @@ python main.py
 
 Output
 Results will be organized under the results/ directory:
+
 ```text
 results/
 ├── dataset_mvtec/
