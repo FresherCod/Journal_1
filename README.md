@@ -61,8 +61,9 @@ dataset_proprietary
 Not publicly available
 Contains your industrial textile/garment data with sample/train/good and sample/test/defect_type structure.
 
-
 Required Internal Structure (Example: MVTec AD bottle class):
+
+```text
 data/
 ├── dataset_mvtec/
 │   ├── bottle/
@@ -73,7 +74,7 @@ data/
 │   │   └── test/
 │   │       ├── good/
 │   │       ├── screw_up/  # NG
-│   │       └── crack/    # NG
+│   │       └── crack/     # NG
 └── ...
 
 4. Model Weights
@@ -91,7 +92,7 @@ python main.py
 
 Output
 Results will be organized under the results/ directory:
-results/
+```textults/
 ├── dataset_mvtec/
 │   ├── report_dataset_mvtec.xlsx  # Final performance summary (NG F1, OK F1, Time)
 │   ├── charts/                    # Heatmaps and Bar Charts
