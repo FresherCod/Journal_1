@@ -63,7 +63,7 @@ Contains your industrial textile/garment data with sample/train/good and sample/
 
 Required Internal Structure (Example: MVTec AD bottle class):
 
-```text
+```
 data/
 ├── dataset_mvtec/
 │   ├── bottle/
@@ -76,7 +76,7 @@ data/
 │   │       ├── screw_up/  # NG
 │   │       └── crack/     # NG
 └── ...
-
+```
 4. Model Weights
 The feature extractor, EfficientNet-B7, must be available locally. Update CONFIG["MODEL_PATH"] in main.py to point to the local cache directory of your EfficientNet-B7 model weights, typically loaded from the Hugging Face hub.
 ⚙️ Running the Analysis
@@ -93,7 +93,7 @@ python main.py
 Output
 Results will be organized under the results/ directory:
 
-``` text
+``` 
 results/
 ├── dataset_mvtec/
 │   ├── report_dataset_mvtec.xlsx  # Final performance summary (NG F1, OK F1, Time)
@@ -101,7 +101,7 @@ results/
 │   └── showcases/                 # Qualitative image results (TP, FP, FN, TN)
 ├── dataset_proprietary/
 └── ...
-
+```
 📝 Reproducibility and Licensing
 
 Random Seed: All random operations (e.g., initial clustering, t-SNE, VAE/AnoGAN weights) use a fixed seed of 42.
