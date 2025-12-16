@@ -92,7 +92,8 @@ python main.py
 
 Output
 Results will be organized under the results/ directory:
-```textults/
+```text
+results/
 ├── dataset_mvtec/
 │   ├── report_dataset_mvtec.xlsx  # Final performance summary (NG F1, OK F1, Time)
 │   ├── charts/                    # Heatmaps and Bar Charts
